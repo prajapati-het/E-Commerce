@@ -289,9 +289,9 @@ def search(request):
     # here 'search' is name in input tag in base.html
     data = request.GET['search']
     
-    if (data.lower()) == 'Topwear':
+    if (data.lower()) == 'topwear':
         return redirect('Topwear')
-    elif data.lower() == 'Bottomwear':
+    elif data.lower() == 'bottomwear':
         return redirect('Bottomwear')
     else:
         return redirect('home')        
